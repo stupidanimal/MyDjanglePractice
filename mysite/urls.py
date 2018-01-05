@@ -20,5 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/',view.hello),
     path('time/',view.current_datetime),
-    path('time/plus/<int:offset>',view.hours_ahead)
+    path('time/plus/<int:offset>',view.hours_ahead),
+    path('time2/',view.current_datetime2),
+    path('home/',view.testPartialView)
 ]
